@@ -1,124 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <script src="https://kit.fontawesome.com/c4f57e90a7.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="https://kit.fontawesome.com/c4f57e90a7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!--   body flex item -->
-    <header id="header">
-        <div>
-        <img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="">
-        </div>
-        <nav id="nav-bar">
-        <ul>
-            <li><a href="#features-section" class="nav-link">Features</a></li>
-            <li><a href="#how-it-works-section" class="nav-link">How It Works</a></li>
-            <li><a href="#pricing-section" class="nav-link">Pricing</a></li>
-        </ul>
-        </nav>
-    </header>
+  <!-- HEADER -->
+  <header id="header">
+    <div>
+      <img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="">
+    </div>
+    <nav id="nav-bar">
+      <ul>
+        <li><a href="#features-section" class="nav-link">Features</a></li>
+        <li><a href="#how-it-works-section" class="nav-link">How It Works</a></li>
+        <li><a href="#pricing-section" class="nav-link">Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!--   body flex item -->
-    <main id="main-wrapper">
-        <section id="form-section">
-        <h1>Handcrafted, home-made masterpieces!</h1>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <input name="email" id="email" type="email" size="40" placeholder="Punch in your email">
-            <input id="submit" type="submit" value="get started">
-        </form>
-        </section>
+  <!-- MAIN -->
+  <main id="main-wrapper">
+    
+    <!-- FORM -->
+    <section id="form-section">
+      <h1>Handcrafted, home-made masterpieces!</h1>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input name="email" id="email" type="email" size="40" placeholder="Punch in your email">
+        <input id="submit" type="submit" value="get started">
+      </form>
+    </section>
 
-        <!-- FEATURES -->
-        <section id="features-section">
-        <ul id="features-list">
-            <li class="feature">
-            <div class="icon">
-                <i class="fas fa-fire"></i>
-            </div>
-            <div class="copy">
-                <h2>Premium Materials</h2>
-                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your
-                purchase</p>
-            </div>
-            </li>
-            <li class="feature">
-            <div class="icon">
-                <i class="fas fa-truck"></i>
-            </div>
-            <div class="copy">
-                <h2>Fast Shipping</h2>
-                <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free
-                returns if you are not satisfied.</p>
-            </div>
-            </li>
-            <li class="feature">
-            <div class="icon">
-                <i class="fas fa-battery-full"></i>
-            </div>
-            <div class="copy">
-                <h2>Quality Assurance</h2>
-                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the
-                pitch of your instrument.</p>
-            </div>
-            </li>
-        </ul>
-        </section>
+    <!-- FEATURES -->
+    <section id="features-section">
+      <ul id="features-list">
+        <li class="feature">
+          <div class="icon">
+            <i class="fas fa-fire"></i>
+          </div>
+          <div class="copy">
+            <h2>Premium Materials</h2>
+            <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your
+            purchase</p>
+          </div>
+        </li>
+        <li class="feature">
+          <div class="icon">
+            <i class="fas fa-truck"></i>
+          </div>
+          <div class="copy">
+            <h2>Fast Shipping</h2>
+            <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free
+            returns if you are not satisfied.</p>
+          </div>
+        </li>
+        <li class="feature">
+          <div class="icon">
+            <i class="fas fa-battery-full"></i>
+          </div>
+          <div class="copy">
+            <h2>Quality Assurance</h2>
+            <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the
+            pitch of your instrument.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-        <section id="how-it-works-section">
-        <div class="iframe-container">
-            <iframe id ="video" width="560" height="315" src="https://www.youtube.com/embed/2XN5mhdWoM0" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        </section>
+    <!-- HOW IT WORKS -->
+    <section id="how-it-works-section">
+      <div class="iframe-container">
+        <iframe id ="video" width="560" height="315" src="https://www.youtube.com/embed/2XN5mhdWoM0" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
 
-        <section id="pricing-section">
-        <ul class="pricing-wrapper">
-            <li class="price-box">
-            <h4>Tenor Trombone</h4>
-            <div class="price">$600</div>
-            <p>lorem</p>
-            <p>lorem</p>
-            <p>lorem</p>
-            <p>lorem</p>
-            <input type="submit" id="submit" value="Select">
-            </li>
-            <li class="price-box">
-            <h4>Tenor Trombone</h4>
-            <div class="price">$600</div>
-            <p>lorem</p>
-            <p>lorem</p>
-            <p>lorem</p>
-            <p>lorem</p>
-            <input type="submit" id="submit" value="Select">
-            </li>
-            <li class="price-box">
-            <h4>Tenor Trombone</h4>
-            <div class="price">$600</div>
-            <p>lorem</p>
-            <p>lorem</p>
-            <p>lorem</p>
-            <p>lorem</p>
-            <input type="submit" id="submit" value="Select">
-            </li>
-        </ul>
-        </section>
+    <!-- PRICING -->
+    <section id="pricing-section">
+      <ul class="pricing-wrapper">
+        <li class="price-box">
+          <h4>Tenor Trombone</h4>
+          <div class="price">$600</div>
+          <p>lorem</p>
+          <p>lorem</p>
+          <p>lorem</p>
+          <p>lorem</p>
+          <input type="submit" id="submit" value="Select">
+        </li>
+        <li class="price-box">
+          <h4>Tenor Trombone</h4>
+          <div class="price">$600</div>
+          <p>lorem</p>
+          <p>lorem</p>
+          <p>lorem</p>
+          <p>lorem</p>
+          <input type="submit" id="submit" value="Select">
+        </li>
+        <li class="price-box">
+          <h4>Tenor Trombone</h4>
+          <div class="price">$600</div>
+          <p>lorem</p>
+          <p>lorem</p>
+          <p>lorem</p>
+          <p>lorem</p>
+          <input type="submit" id="submit" value="Select">
+        </li>
+      </ul>
+    </section>
 
-    </main>
+  </main>
 
-    <!--   body flex item -->
-    <footer id="footer-wrapper">
-        <ul>
-        <li><a href="/">Privacy</a></li>
-        <li><a href="/">Terms</a></li>
-        <li><a href="/">Contact</a></li>
-        </ul>
-        <p>Copyright 2016, Original Trombones</p>
-    </footer>
+  <!-- FOOTER -->
+  <footer id="footer-wrapper">
+    <ul>
+    <li><a href="/">Privacy</a></li>
+    <li><a href="/">Terms</a></li>
+    <li><a href="/">Contact</a></li>
+    </ul>
+    <p>Copyright 2016, Original Trombones</p>
+  </footer>
 
 </body>
 </html>

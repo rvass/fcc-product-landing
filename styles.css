@@ -1,11 +1,12 @@
-/* GLOBAL STYLES */
+/* GLOBAL */
+
 * {
   padding: 0;
   margin: 0;
 }
 
 html {
-  background-color: #eee;
+  background-color:white;
   font-family: arial;
 }
 
@@ -19,8 +20,6 @@ a {
   color: black;
 }
 
-/* BODY LAYOUT STYLES */
-
 body {
   display: flex;
   flex-direction: column;
@@ -28,19 +27,20 @@ body {
   margin: 0;
 }
 
-/* HEADER STYLES */
-
+/* HEADER */
 #header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 75px;
-  background-color: #eee;
+  min-height: 60px;
+  background-color: rgb(255, 166, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 20;
+  padding: 20px 0;
+  font-size: 1.3em;
 }
 #nav-bar {
   width: 40%;
@@ -58,8 +58,7 @@ body {
   display: block;
 }
 
-/* MAIN STYLES */
-
+/* MAIN */
 #main-wrapper {
   flex-grow: 1;
   /* To shift the top of the element from under the fixed header */
@@ -70,10 +69,14 @@ body {
   position: relative;
 }
 
-/* MAIN > FORM SECTION STYLES */
+/* FORM */
+#form-section {
+  padding: 150px 0 40px;
+}
 
 #form-section > h1 {
   margin-bottom: 30px;  
+  font-size: 2.5em;
 }
 
 #form input {
@@ -92,16 +95,21 @@ body {
   cursor: pointer;
 }
 
-/* MAIN > FEATURES SECTION STYLES*/
+/* FEATURES */
+#features-section {
+  padding: 50px;
+}
+
 #features-list {
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  
   text-align: left;
 }  
 .feature {
   display: flex;
-/*   margin: 40px 0; */
+  margin: 0 auto;
+  width: 100%;
   height: 150px;
   align-items: center;
 }
@@ -112,6 +120,7 @@ body {
   color: orange;
 }  
 .copy {
+  margin-left: 40px;
   width: 80%;
 }
 /* .copy > p {
@@ -121,7 +130,7 @@ body {
   margin-bottom: 5px;
 }
 
-/* MAIN > HOW IT WORKS SECTION STYLES */
+/* HOW IT WORKS */
 #how-it-works-section {
   max-width: 560px;
   margin: 50px auto;
@@ -143,11 +152,11 @@ body {
 }
 
 
-/* MAIN > PRICING SECTION STYLES */
+/* PRICING */
 #pricing-section {
-/*   padding-top: 50px; */
-/*   max-width: 1000px;
-  width: 100%; */
+  padding-top: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .pricing-wrapper {
@@ -162,7 +171,7 @@ body {
 /*   background-color: orange; */
   min-width: 300px;
 /*   max-width: 280px; */
-  margin: 10px;
+  margin: 50px;
   border: thin solid black;
   display: flex;
   flex-direction: column;
@@ -171,7 +180,7 @@ body {
 }
 .price-box h4 {
   text-transform: uppercase;
-  background-color: #ddd;
+  background-color: rgb(255, 166, 0);
   padding: 15px;
   box-sizing: border-box;
   width: 100%
@@ -186,12 +195,13 @@ body {
   cursor: pointer;
 }
 
-/* FOOTER STYLES */
+/* FOOTER */
 
 #footer-wrapper {
+  height: 100px;
   width: 70vw;
-  margin: 0 auto;
-  background-color: #ddd;
+  margin: 50px auto 0;
+  background-color: rgb(255, 166, 0);
 }
 #footer-wrapper > ul {
 /*   text-align: right; */
@@ -217,19 +227,23 @@ body {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   #nav-bar ul {
     flex-direction: column;
     align-items: center;
   }
-  
+  #main-wrapper{
+    width: 100vw;
+  }
   
   .pricing-wrapper {
     flex-direction: column; 
     justify-content: flex-start;
   }
   
-  
+  #footer-wrapper {
+    width: 100vw;
+  }
   #footer-wrapper ul{
     float: none;
     text-align: center;
